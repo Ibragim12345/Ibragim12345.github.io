@@ -1,0 +1,156 @@
+/* стили помогут анимировать кнопки и сделать подсветку динамичной*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 2em;
+    background-color: #3914AF;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 10px;
+}
+
+.buttonh {
+    /* background-color: #6A48D7;
+    border-radius: 2em; */
+    padding: 0.75em;
+    cursor: pointer;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+#searchp {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    /* padding: 0.55em; */
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    min-width: 0;
+    cursor: default;
+}
+
+.buttonh.no-hover:hover {
+    background-color: #6A48D7;
+    border-radius: 2em;
+    transition: none; 
+}
+
+.search {
+    background-color: white;
+    border-radius: 2em;
+    /* width: 40em; */
+    flex: 1;
+    cursor: pointer;
+}
+
+.search p {
+    font-size: 7px;
+    margin: 0.5em 1em;
+    color: #AA8FFF;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex: 1;
+    /* margin: 1.3em; */
+    padding: 0 1em;
+    gap: 1em;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3914AF;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+.product p {
+    /* background-color: #6A48D7; */
+    text-align: center;
+    /* border-radius: 2em; */
+    padding: 0.75em;
+    cursor: pointer;
+}
+
+
+.buttonh:hover, .product p:hover, .source:hover {
+    background-color: white;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease, 
+                border-radius 0.3s ease;
+}
+
+.buttonh:not(:hover), .product p:not(:hover), .source:not(:hover) {
+    background-color: #6A48D7;
+    border-radius: 2em;
+    transition: background-color 1s ease, 
+                border-radius 1s ease; 
+}
+
+/* .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 2em;
+    background-color: #3914AF;
+    border-radius: 30px;
+    width: 20%;
+}
+
+.source {
+    margin: 1em;
+    padding: 0.75em;
+} */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    margin: 1.2em;
+    background-color: #3914AF;
+    border-radius: 30px;
+    width: 20%;
+    min-height: 300px; 
+}
+
+.source {
+    flex: 1; 
+    width: 90%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75em;
+    box-sizing: border-box;
+}
